@@ -1,13 +1,13 @@
-import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import React from "react";
+import SideBar from "./SideBar";
 
 const Header = () => {
   return (
     <header className="fixed h-16 z-10 bg-white border-b w-full">
       <nav className="max-w-[1440px] h-full flex items-center justify-between px-6 mx-auto">
         <div className="flex-1">
-          <button>Menu</button>
+          <SideBar />
         </div>
 
         <Link

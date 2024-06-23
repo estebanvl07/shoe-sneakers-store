@@ -15,18 +15,18 @@ datasource db {
 
 // Define el modelo de productos
 model Product {
-  id          Int         @id @default(autoincrement())
-  name        String
-  description String
-  price       Float
-  image_url   String
-  variants    Variant[] // Relación uno a muchos con las variantes
-  categoryId  Int
-  category    Category    @relation(fields: [categoryId], references: [id])
+  id            Int         @id @default(autoincrement())
+  name          String
+  description   String
+  price         Float
+  image_url     String
+  variants      Variant[] // Relación uno a muchos con las variantes
+  categoryId    Int
+  category      Category    @relation(fields: [categoryId], references: [id])
 }
 
 model Category {
-  id            Int @id @default(autoincrement())
+  id            Int       @id @default(autoincrement())
   name          String
   description   String
   products      Product[]

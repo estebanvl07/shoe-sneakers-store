@@ -1,6 +1,4 @@
 import { Button, Chip } from "@nextui-org/react";
-import Image from "next/image";
-import Product from "~/components/Product";
 import { ProductSection } from "~/components/ProductSection";
 
 export default function Home() {
@@ -14,7 +12,7 @@ export default function Home() {
         </h2>
         <nav className="flex gap-2 items-center">
           <Button color="primary">
-            Ver Tendencias
+            Ver tendencias
           </Button>
           <Button color="primary" variant="flat">
             Más vendidos
